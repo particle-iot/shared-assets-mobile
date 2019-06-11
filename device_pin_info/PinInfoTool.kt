@@ -200,7 +200,7 @@ fun List<Pin>.addPositionInfo(): List<Pin> {
     var currentList = leftColumn
     var currentColumn = PinColumn.LEFT
     for (pin in this) {
-        if (currentColumn == PinColumn.LEFT && (pin.tinkerName == "D0" || pin.tinkerName == "C0")) {
+        if (currentColumn == PinColumn.LEFT && (pin.tinkerName == "D0" || pin.tinkerName == "C4")) {
             currentColumn = PinColumn.RIGHT
             currentList = rightColumn
         }
