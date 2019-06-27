@@ -494,88 +494,6 @@
                 "tinkerName":"A0"
             },
             {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogRead"
-                ],
-                "label":"B5",
-                "tinkerName":"B5"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogRead"
-                ],
-                "label":"B4",
-                "tinkerName":"B4"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogRead",
-                    "AnalogWritePWM"
-                ],
-                "label":"B3",
-                "tinkerName":"B3"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogRead",
-                    "AnalogWritePWM"
-                ],
-                "label":"B2",
-                "tinkerName":"B2"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogWritePWM"
-                ],
-                "label":"B1",
-                "tinkerName":"B1"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogWritePWM"
-                ],
-                "label":"B0",
-                "tinkerName":"B0"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogWritePWM"
-                ],
-                "label":"C4",
-                "tinkerName":"C4"
-            },
-            {
-                "column":"LEFT",
-                "functions":[
-                    "DigitalRead",
-                    "DigitalWrite",
-                    "AnalogWritePWM"
-                ],
-                "label":"C5",
-                "tinkerName":"C5"
-            },
-            {
                 "column":"RIGHT",
                 "functions":[
                     "DigitalRead",
@@ -1115,7 +1033,7 @@
         ]
     },
     {
-        "deviceType":"B_SERIES",
+        "deviceType":"B_SOM",
         "deviceTypeId":23,
         "pins":[
             {
