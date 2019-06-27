@@ -2,6 +2,12 @@
  * Tool for converting the pinInfo.json file into something easily consumable for use in the
  * Tinker view of the Particle mobile apps
  *
+ * NOTE: due to design constraints, the mobile team + mgmt (Raimis & Jens + Julien) have decided
+ * not to show the extra Electron pins (i.e.: the "B" and "C" pins)  This is view-level information,
+ * but we address it in the code below because the mobile team believes that, in this case, having
+ * the result of that decision about the pins live in *one* codebase is more important than the
+ * dissonance/incorrectness of putting view information in our data model.)
+ *
  * (JSON lives at: https://github.com/particle-iot/docs/blob/master/src/assets/files/pinInfo.json )
  *
  * Requires GSON, Okio, the Particle Android SDK, and a Kotlin environment to run this file from
@@ -95,7 +101,7 @@ enum class PinColumn {
 
 
 data class Pin(
-    val label: String,
+    val label: String,      // "name" in the original JSON
     val tinkerName: String,
     val functions: List<PinFunction>,
     val column: PinColumn = PinColumn.LEFT
@@ -124,7 +130,10 @@ fun SourcePlatform.toPlatform(): ParticlePlatform {
         this.id,
         ParticleDeviceType.fromInt(this.id),
         this.pins.map { it.toPin() }
-            .filter { it.functions.isNotEmpty() }  // some pins don't support any functions
+            // some pins don't support any functions
+            .filter { it.functions.isNotEmpty() }
+            // filter out "extra" Electron pins (see note at top of file)
+            .filter { !it.label.startsWith("C") && !it.label.startsWith("B")}
             .addPositionInfo()
     )
 }
@@ -275,4 +284,3 @@ val corePins: ParticlePlatform
             )
         )
     }
-
