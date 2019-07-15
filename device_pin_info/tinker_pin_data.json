@@ -8,6 +8,26 @@
                 "functions":[
                     "DigitalRead",
                     "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"TX",
+                "tinkerName":"TX"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"RX",
+                "tinkerName":"RX"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
                     "AnalogRead",
                     "AnalogWritePWM"
                 ],
@@ -170,6 +190,26 @@
         "deviceType":"P1",
         "deviceTypeId":8,
         "pins":[
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"TX",
+                "tinkerName":"TX"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"RX",
+                "tinkerName":"RX"
+            },
             {
                 "column":"LEFT",
                 "functions":[
@@ -408,6 +448,26 @@
         "deviceType":"ELECTRON",
         "deviceTypeId":10,
         "pins":[
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"TX",
+                "tinkerName":"TX"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"RX",
+                "tinkerName":"RX"
+            },
             {
                 "column":"LEFT",
                 "functions":[
@@ -669,6 +729,24 @@
                 "tinkerName":"D11"
             },
             {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"RX",
+                "tinkerName":"D10"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"TX",
+                "tinkerName":"D09"
+            },
+            {
                 "column":"RIGHT",
                 "functions":[
                     "DigitalRead",
@@ -717,6 +795,26 @@
                 ],
                 "label":"D4",
                 "tinkerName":"D4"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D3",
+                "tinkerName":"D3"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D2",
+                "tinkerName":"D2"
             },
             {
                 "column":"RIGHT",
@@ -836,6 +934,24 @@
                 "tinkerName":"D11"
             },
             {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"RX",
+                "tinkerName":"D10"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"TX",
+                "tinkerName":"D09"
+            },
+            {
                 "column":"RIGHT",
                 "functions":[
                     "DigitalRead",
@@ -884,6 +1000,26 @@
                 ],
                 "label":"D4",
                 "tinkerName":"D4"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D3",
+                "tinkerName":"D3"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D2",
+                "tinkerName":"D2"
             },
             {
                 "column":"RIGHT",
@@ -1003,6 +1139,34 @@
                 "tinkerName":"D11"
             },
             {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"RX",
+                "tinkerName":"D10"
+            },
+            {
+                "column":"LEFT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"TX",
+                "tinkerName":"D09"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D8",
+                "tinkerName":"D8"
+            },
+            {
                 "column":"RIGHT",
                 "functions":[
                     "DigitalRead",
@@ -1011,6 +1175,56 @@
                 ],
                 "label":"D7",
                 "tinkerName":"D7"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D6",
+                "tinkerName":"D6"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D5",
+                "tinkerName":"D5"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D4",
+                "tinkerName":"D4"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D3",
+                "tinkerName":"D3"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite",
+                    "AnalogWritePWM"
+                ],
+                "label":"D2",
+                "tinkerName":"D2"
             },
             {
                 "column":"RIGHT",
@@ -1175,6 +1389,15 @@
                 "column":"RIGHT",
                 "functions":[
                     "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"D2",
+                "tinkerName":"D2"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
                     "DigitalWrite",
                     "AnalogRead"
                 ],
@@ -1185,11 +1408,38 @@
                 "column":"RIGHT",
                 "functions":[
                     "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"D3",
+                "tinkerName":"D3"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"RX",
+                "tinkerName":"D10"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
                     "DigitalWrite",
                     "AnalogRead"
                 ],
                 "label":"A3",
                 "tinkerName":"D16"
+            },
+            {
+                "column":"RIGHT",
+                "functions":[
+                    "DigitalRead",
+                    "DigitalWrite"
+                ],
+                "label":"TX",
+                "tinkerName":"D9"
             },
             {
                 "column":"RIGHT",
