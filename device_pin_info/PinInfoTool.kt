@@ -44,7 +44,7 @@ fun getPlatformsFromJson(jsonString: String): List<ParticlePlatform> {
 }
 
 
-fun writePlatformsToSDCard(
+fun writePlatformsToFile(
     platforms: List<ParticlePlatform>,
     targetPath: String,
     overwriteExistingFile: Boolean = false
@@ -143,7 +143,7 @@ fun SourcePin.toPin(): Pin {
     return Pin(
         this.name,
         this.altName ?: this.name,
-        if (this.serial.isNullOrEmpty()) this.toFunctions() else listOf()
+        this.toFunctions()
     )
 }
 
