@@ -8,6 +8,10 @@
  * the result of that decision about the pins live in *one* codebase is more important than the
  * dissonance/incorrectness of putting view information in our data model.)
  *
+ * FURTHER NOTE: because of some conditional behavior with certain pins, we're only going to show
+ * pins labeled "DAC", "WKP", "A[number]", or "D[number]".  See this Slack thread for more info:
+ * https://s.slack.com/archives/C04EP77AF/p1566419278030700
+ *
  * (JSON lives at: https://github.com/particle-iot/docs/blob/master/src/assets/files/pinInfo.json )
  *
  * Requires GSON, Okio, the Particle Android SDK, and a Kotlin environment to run this file from
@@ -21,6 +25,9 @@ import com.google.gson.annotations.JsonAdapter
 import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonWriter
 import io.particle.android.sdk.cloud.ParticleDevice.ParticleDeviceType
+import io.particle.android.sdk.cloud.ParticleDevice.ParticleDeviceType.A_SOM
+import io.particle.android.sdk.cloud.ParticleDevice.ParticleDeviceType.B_SOM
+import io.particle.android.sdk.cloud.ParticleDevice.ParticleDeviceType.X_SOM
 import io.particle.android.sdk.ui.PinFunction.AnalogRead
 import io.particle.android.sdk.ui.PinFunction.AnalogWriteDAC
 import io.particle.android.sdk.ui.PinFunction.AnalogWritePWM
@@ -46,7 +53,7 @@ fun getPlatformsFromJson(jsonString: String): List<ParticlePlatform> {
 
 fun writePlatformsToFile(
     platforms: List<ParticlePlatform>,
-    targetPath: String,
+    targetPath: String = "/sdcard/tinker_pin_data.json",
     overwriteExistingFile: Boolean = false
 ) {
     val targetFile = File(targetPath)
@@ -126,16 +133,47 @@ sealed class PinFunction(val name: String) {
 
 //region Converter functions
 fun SourcePlatform.toPlatform(): ParticlePlatform {
-    return ParticlePlatform(
-        this.id,
-        ParticleDeviceType.fromInt(this.id),
-        this.pins.map { it.toPin() }
-            // some pins don't support any functions
-            .filter { it.functions.isNotEmpty() }
-            // filter out "extra" Electron pins (see note at top of file)
-            .filter { !it.label.startsWith("C") && !it.label.startsWith("B")}
-            .addPositionInfo()
-    )
+    val deviceType = ParticleDeviceType.fromInt(this.id)
+
+    val platformPins = this.pins.map { it.toPin() }
+        // some pins don't support any functions
+        .filter { it.functions.isNotEmpty() }
+        .filter { isValidTinkerPin(it) }
+
+    val pinsWithLocation = if (deviceType.isSoM()) {
+        platformPins.addPositionInfoSom()
+    } else {
+        platformPins.addPositionInfo()
+    }
+
+    return ParticlePlatform(this.id, deviceType, pinsWithLocation)
+}
+
+
+fun ParticleDeviceType.isSoM(): Boolean {
+    return when(this) {
+        A_SOM,
+        B_SOM,
+        X_SOM -> true
+        else -> false
+    }
+}
+
+
+fun isValidTinkerPin(pin: Pin): Boolean {
+    val label = pin.label.toUpperCase()
+    if (label in listOf("DAC", "WKP")) {
+        return true
+    }
+
+    // Match pins that start with "A" or "D", followed by a number
+    return (label.startsWith("A") || label.startsWith("D")
+            && (label.substring(1).isNumeric()))
+}
+
+
+fun String.isNumeric(): Boolean {
+    return (this.toIntOrNull() != null)
 }
 
 
@@ -221,6 +259,23 @@ fun List<Pin>.addPositionInfo(): List<Pin> {
 }
 
 
+fun List<Pin>.addPositionInfoSom(): List<Pin> {
+    val leftColumn: MutableList<Pin> = mutableListOf()
+    val rightColumn: MutableList<Pin> = mutableListOf()
+
+    for (pin in this) {
+        if (pin.label.startsWith("A")) {
+            leftColumn.add(pin.copy(column = PinColumn.LEFT))
+        } else if (pin.label.startsWith("D")) {
+            rightColumn.add(pin.copy(column = PinColumn.RIGHT))
+        }
+    }
+
+    return leftColumn.sortedBy { it.label } + rightColumn.sortedByDescending { it.label }
+}
+
+
+
 class PinFunctionAdapter : TypeAdapter<PinFunction?>() {
 
     companion object {
@@ -273,14 +328,14 @@ val corePins: ParticlePlatform
                 Pin("A2", "A2", noAnalogWrite),
                 Pin("A1", "A1", allFunctions),
                 Pin("A0", "A0", allFunctions),
-                Pin("D0", "D0", noAnalogRead),
-                Pin("D1", "D1", noAnalogRead),
-                Pin("D2", "D2", digitalOnly),
-                Pin("D3", "D3", digitalOnly),
-                Pin("D4", "D4", digitalOnly),
-                Pin("D5", "D5", digitalOnly),
-                Pin("D6", "D6", digitalOnly),
-                Pin("D7", "D7", digitalOnly)
+                Pin("D0", "D0", noAnalogRead, PinColumn.RIGHT),
+                Pin("D1", "D1", noAnalogRead, PinColumn.RIGHT),
+                Pin("D2", "D2", digitalOnly, PinColumn.RIGHT),
+                Pin("D3", "D3", digitalOnly, PinColumn.RIGHT),
+                Pin("D4", "D4", digitalOnly, PinColumn.RIGHT),
+                Pin("D5", "D5", digitalOnly, PinColumn.RIGHT),
+                Pin("D6", "D6", digitalOnly, PinColumn.RIGHT),
+                Pin("D7", "D7", digitalOnly, PinColumn.RIGHT)
             )
         )
     }
