@@ -1,0 +1,17 @@
+{
+  "TinkerStrings": {
+    "Action": {
+      "Cancel": "Cancel123"
+    },
+
+    "Welcome": {
+      "GetStarted": "Get Started123",
+      "Version": "v{{0}}b{{1}}123"
+    },
+
+    "DeviceList": {
+      "Title": "Your Devices123",
+      "SearchPlaceholder": "Search devices...123"
+    }
+  }
+}
