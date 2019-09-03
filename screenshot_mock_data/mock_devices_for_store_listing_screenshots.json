@@ -15,7 +15,14 @@
         "iccid":"12345678901234567890",
         "last_iccid":"12345678901234567890",
         "imei":"352753094309968",
-        "mobile_secret":"52D9A0EC3AFBFBF"
+        "mobile_secret":"52D9A0EC3AFBFBF",
+        "system_firmware_version":"1.2.0",
+        "variables":{},
+        "functions":["digitalread",
+        "digitalwrite",
+        "analogread",
+        "analogwrite"
+        ]
     },
     {  
         "id":"05a208028929fd77cfb5b081",
