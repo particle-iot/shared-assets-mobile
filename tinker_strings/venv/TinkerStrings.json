@@ -6,12 +6,16 @@
     },
 
     "Welcome": {
-      "GetStartedButton": "Get Started<123>",
       "Version": "v{{0}}b{{1}}<123>",
       "SkipAuthWarning": "Skipping authentication will run Particle app in limited functionality mode - you would only be able to setup Wi-Fi credentials to Photon based devices but not claim them to your account nor use Tinker or device inspector. Are you sure you want to continue?<123>",
-      "CloudAPIPrompt": {
-          "Title": "API Base URL<123>",
-          "Message": "Please enter Particle API Base URL<123>"
+      "Button": {
+        "GetStarted": "Get Started<123>"
+      },
+      "Prompt": {
+        "CloudAPI": {
+            "Title": "API Base URL<123>",
+            "Message": "Please enter Particle API Base URL<123>"
+        }
       }
     },
 
@@ -19,20 +23,24 @@
       "Title": "Your Devices<123>",
       "SearchPlaceholder": "Search devices...<123>",
       "Error": {
-        "Title": "Error<123>",
-        "LoadingDevicesFailed": "Error loading devices, please check your internet connection.<123>"
+        "LoadingDevicesFailed": {
+          "Title": "Error<123>",
+          "Message": "Error loading devices, please check your internet connection.<123>"
+        }
       }
     },
 
     "ScanBarcode": {
-      "WrongStickerError": {
-        "Title": "Whoops!<123>",
-        "Message": "Looks like you are scanning the wrong sticker. Please scan the ICCID barcode that came with your SIM card.<123>"
+      "Error": {
+        "WrongStickerError": {
+          "Title": "Whoops!<123>",
+          "Message": "Looks like you are scanning the wrong sticker. Please scan the ICCID barcode that came with your SIM card.<123>"
+        }
       }
     },
-    
+
     "DeviceInspector": {
-        "Tabs": {
+        "Tab": {
             "Events": "Events<123>",
             "Functions": "Functions<123>",
             "Variables": "Variables<123>",
@@ -40,8 +48,10 @@
         },
 
       "Error": {
-        "Title": "Flashing error<123>",
-        "ErrorFlashingDevice": "Error flashing device<123>"
+        "FlashingDeviceError": {
+          "Title": "Flashing error<123>",
+          "Message": "Error flashing device<123>"
+        },
       },
 
       "Tutorial": {
