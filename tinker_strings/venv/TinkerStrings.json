@@ -1,31 +1,32 @@
 {
   "TinkerStrings": {
     "Action": {
-      "Cancel": "Cancel<123>",
-      "Use": "Use<123>"
+      "Cancel": "Cancel",
+      "Use": "Use",
+      "Flash": "Flash"
     },
 
     "Welcome": {
-      "Version": "v{{0}}b{{1}}<123>",
-      "SkipAuthWarning": "Skipping authentication will run Particle app in limited functionality mode - you would only be able to setup Wi-Fi credentials to Photon based devices but not claim them to your account nor use Tinker or device inspector. Are you sure you want to continue?<123>",
+      "Version": "v{{0}}b{{1}}",
+      "SkipAuthWarning": "Skipping authentication will run Particle app in limited functionality mode - you would only be able to setup Wi-Fi credentials to Photon based devices but not claim them to your account nor use Tinker or device inspector. Are you sure you want to continue?",
       "Button": {
-        "GetStarted": "Get Started<123>"
+        "GetStarted": "Get Started"
       },
       "Prompt": {
         "CloudAPI": {
-            "Title": "API Base URL<123>",
-            "Message": "Please enter Particle API Base URL<123>"
+            "Title": "API Base URL",
+            "Message": "Please enter Particle API Base URL"
         }
       }
     },
 
     "DeviceList": {
-      "Title": "Your Devices<123>",
-      "SearchPlaceholder": "Search devices...<123>",
+      "Title": "Your Devices",
+      "SearchPlaceholder": "Search devices...",
       "Error": {
         "LoadingDevicesFailed": {
-          "Title": "Error<123>",
-          "Message": "Error loading devices, please check your internet connection.<123>"
+          "Title": "Error",
+          "Message": "Error loading devices, please check your internet connection."
         }
       }
     },
@@ -33,39 +34,91 @@
     "ScanBarcode": {
       "Error": {
         "WrongStickerError": {
-          "Title": "Whoops!<123>",
-          "Message": "Looks like you are scanning the wrong sticker. Please scan the ICCID barcode that came with your SIM card.<123>"
+          "Title": "Whoops!",
+          "Message": "Looks like you are scanning the wrong sticker. Please scan the ICCID barcode that came with your SIM card."
+        }
+      }
+    },
+
+    "Tinker": {
+      "DeviceOffline": "Device is offline",
+      "FlashTinker": "To enable Tinker, you need to flash the Tinker firmware to this device.",
+      "Button": {
+        "FlashTinker": "FLASH TINKER"
+      },
+      "Function": {
+        "AnalogRead": "analogRead",
+        "AnalogWrite": "analogWrite",
+        "DigitalRead": "digitalRead",
+        "DigitalWrite": "digitalWrite"
+      },
+      "PinValue": {
+        "High": "HIGH",
+        "Low": "LOW"
+      },
+      "Prompt": {
+        "FlashTinker": {
+          "Title": "Flash Tinker?",
+          "Message": "Flashing will overwrite the application firmware on your Particle device with the Tinker app."
+        }
+      },
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Welcome to Tinker!",
+          "Message": "Tinker is the fastest and easiest way to prototype and play with your Particle device. Access the basic input/output functions of the device pins without writing a line of code."
+        },
+        "Tutorial2": {
+          "Title": "Blink the onboard LED",
+          "Message": "Tap any pin to get started. Start with pin D7 - select 'digitalWrite' and tap the pin, see what happens on your device. You've just flashed an LED over the internet! Reset any pin function by long-pressing it."
+        }
+      },
+      "Error": {
+        "FlashingDeviceError": {
+          "Title": "Flashing error",
+          "Message": "Error flashing device: {{0}}"
+        },
+        "DeviceNotSupported": {
+          "Title": "Reflash Tinker",
+          "Message": "App does not support flashing tinker to this device."
+        },
+        "ReadingValueError": {
+          "Title": "Error",
+          "Message": "There was an error while reading value of {{0}} pin."
+        },
+        "UpdatingValueError": {
+          "Title": "Error",
+          "Message": "There was an error while updating value of {{0}} pin."
         }
       }
     },
 
     "DeviceInspector": {
         "Tab": {
-            "Events": "Events<123>",
-            "Functions": "Functions<123>",
-            "Variables": "Variables<123>",
-            "Tinker": "Tinker<123>"
+            "Events": "Events",
+            "Functions": "Functions",
+            "Variables": "Variables",
+            "Tinker": "Tinker"
         },
 
       "Error": {
         "FlashingDeviceError": {
-          "Title": "Flashing error<123>",
-          "Message": "Error flashing device<123>"
-        },
+          "Title": "Flashing error",
+          "Message": "Error flashing device"
+        }
       },
 
       "Tutorial": {
             "Tutorial1": {
-                "Title": "Welcome to Device Inspector<123>",
-                "Message": "See advanced information on your device.<123>"
+                "Title": "Welcome to Device Inspector",
+                "Message": "See advanced information on your device."
             },
             "Tutorial2": {
-                "Title": "Modes<123>",
-                "Message": "Device inspector has 4 views:\n\nEvents - view a real-time searchable list of published events.\n\nFunctions - interact with your device's functions.\n\nVariables - interact with your device's variables.\n\nTinker - control pin behavior for your device<123>"
+                "Title": "Modes",
+                "Message": "Device inspector has 4 views:\n\nEvents - view a real-time searchable list of published events.\n\nFunctions - interact with your device's functions.\n\nVariables - interact with your device's variables.\n\nTinker - control pin behavior for your device"
             },
             "Tutorial3": {
-                "Title": "Additional actions<123>",
-                "Message": "Tap the Control Panel button to access advanced actions.<123>"
+                "Title": "Additional actions",
+                "Message": "Tap the Control Panel button to access advanced actions."
             }
         }
     }
