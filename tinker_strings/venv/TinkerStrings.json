@@ -23,6 +23,13 @@
         "LoadingDevicesFailed": "Error loading devices, please check your internet connection.<123>"
       }
     },
+
+    "ScanBarcode": {
+      "WrongStickerError": {
+        "Title": "Whoops!<123>",
+        "Message": "Looks like you are scanning the wrong sticker. Please scan the ICCID barcode that came with your SIM card.<123>"
+      }
+    },
     
     "DeviceInspector": {
         "Tabs": {
