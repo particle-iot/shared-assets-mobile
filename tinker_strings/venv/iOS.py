@@ -5,6 +5,7 @@
 
 import sys
 import json
+import io
 from datetime import date
 
 jsonPath = 'TinkerStrings.json'
@@ -15,6 +16,7 @@ if (len(sys.argv) > 1):
     jsonPath = sys.argv[1]
     stringsPath = sys.argv[2]
     swiftPath = sys.argv[3]
+    methodName = sys.argv[4]
 
 def outputStrings(json, key, output):
     for n in json:
@@ -23,42 +25,35 @@ def outputStrings(json, key, output):
             outputStrings(json[n], key, output)
             key.pop()
         else:
-            output.write('\"%s.%s\" = \"%s\";\n' % ('.'.join(key), n, json[n]))
-    output.write('\n')
+            output.write(u'\"%s.%s\" = \"%s<>\";\n' % ('.'.join(key), n, json[n]))
+    output.write(u'\n')
 
 
 
 def outputSwift(json, key, output):
     for n in json:
         if isinstance(json[n], dict):
-            output.write('%senum %s {\n' % ('\t' * len(key), n))
+            output.write(u'%senum %s {\n' % ('\t' * len(key), n))
             key.append(n)
             outputSwift(json[n], key, output)
             key.pop()
-            output.write('%s}\n' % ('\t' * len(key)))
+            output.write(u'%s}\n' % ('\t' * len(key)))
         else:
-            output.write('%sstatic let %s = "%s.%s".tinkerLocalized()\n' % ('\t' * len(key), n, '.'.join(key), n))
+            output.write(u'%sstatic let %s = "%s.%s".%s\n' % ('\t' * len(key), n, '.'.join(key), n, methodName))
 
 #open data as
-data = json.load(open(jsonPath))
+data = json.load(io.open(jsonPath, 'r', encoding='utf8'))
 key = []
 
 #prepare for the output
-output = open(stringsPath, "w")
-output.write('// Generated on %s by iOS.py\n\n' % date.today())
+output = io.open(stringsPath, 'w', encoding='utf8')
+output.write(u'// Generated on %s by iOS.py\n\n' % date.today())
 outputStrings(data, key, output)
 output.close()
 
 #prepare for the output
-output = open(swiftPath, "w")
-
-output.write('// Generated on %s by iOS.py\n\n' % date.today())
-
-# with open("TinkerStringsHeader.swift") as f:
-#     lines = f.readlines()
-#     output.writelines(lines)
-
-
+output = io.open(swiftPath, 'w', encoding='utf8')
+output.write(u'// Generated on %s by iOS.py\n\n' % date.today())
 outputSwift(data, key, output)
 output.close()
 
