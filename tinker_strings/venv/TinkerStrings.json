@@ -1,17 +1,369 @@
 {
   "TinkerStrings": {
+    "Device": {
+      "NoName": "<no name>"
+    },
     "Action": {
-      "Cancel": "Cancel123"
+      "Cancel": "Cancel",
+      "Use": "Use",
+      "Flash": "Flash",
+      "CopyToClipboard": "Copy to clipboard",
+      "CopyDataToClipboard": "Copy data to clipboard",
+      "CopyEventToClipboard": "Copy event to clipboard",
+      "Close": "Close",
+      "Yes": "Yes",
+      "No": "No",
+      "Save": "Save",
+      "ClearAll": "Clear All",
+      "LogOut": "Log out",
+      "LogIn": "Log in",
+      "ShareApplicationLogs": "Share application logs",
+      "Setup3rdGen": "Argon / Boron / Xenon",
+      "SetupPhoton": "Photon",
+      "SetupElectron": "Electron / SIM"
     },
-
     "Welcome": {
-      "GetStarted": "Get Started123",
-      "Version": "v{{0}}b{{1}}123"
+      "Version": "v{{version}}b{{build}}",
+      "SkipAuthWarning": "Skipping authentication will run Particle app in limited functionality mode - you would only be able to setup Wi-Fi credentials to Photon based devices but not claim them to your account nor use Tinker or device inspector. Are you sure you want to continue?",
+      "Button": {
+        "GetStarted": "Get Started"
+      },
+      "Prompt": {
+        "CloudAPI": {
+          "Title": "API Base URL",
+          "Message": "Please enter Particle API Base URL"
+        }
+      }
     },
-
     "DeviceList": {
-      "Title": "Your Devices123",
-      "SearchPlaceholder": "Search devices...123"
+      "Title": "Your Devices",
+      "SearchPlaceholder": "Search devices...",
+      "Unknown": "Unknown",
+      "NoDevices": "No devices",
+      "NoDevicesMatchingSearch": "No devices found matching '{{searchTerm}}'",
+      "NoDevicesForCurrentFilter": "No devices found matching the current filter",
+      "PhotonLib": {
+        "InstructionsVideo": {
+          "iOS": "photon_wifi.mp4",
+          "Android": ""
+        },
+        "ModeButtonName": "SETUP button"
+      },
+      "Error": {
+        "LoadingDevicesFailed": {
+          "Title": "Error",
+          "Message": "Error loading devices, please check your internet connection."
+        },
+        "SetupNotCompleted": {
+          "Title": "Warning",
+          "Message": "Device setup did not complete."
+        },
+        "UnclaimingFailed": {
+          "Title": "Error",
+          "Message": "Error while unclaiming device: {{error}}"
+        },
+        "GettingInformationFromCloudFailed": {
+          "Title": "Error",
+          "Message": "Error getting information from Particle Cloud"
+        },
+        "AuthRequiredToSetup3rdGen": {
+          "Title": "Authentication",
+          "Message": "You must be logged to your Particle account in to setup an Argon / Boron / Xenon"
+        },
+        "AuthRequiredToSetupElectron": {
+          "Title": "Authentication",
+          "Message": "You must be logged to your Particle account in to setup an Electron"
+        },
+        "ExportingLogsFailed": {
+          "Title": "Error",
+          "Message": "There was an error exporting application logs."
+        }
+      },
+      "Prompt": {
+        "SetupSuccessfulFirstDevice": {
+          "Title": "Success",
+          "Message": "Nice, you've successfully set up your first Particle! You'll be receiving a welcome email with helpful tips and links to resources. Start developing by going to https://build.particle.io/ on your computer, or stay here and enjoy the magic of Tinker."
+        },
+        "SetupSuccessful": {
+          "Title": "Success",
+          "Message": "Nice, you've successfully set up your first Particle! You'll be receiving a welcome email with helpful tips and links to resources. Start developing by going to https://build.particle.io/ on your computer, or stay here and enjoy the magic of Tinker."
+        },
+        "SetupSuccessfulWifiOnly": {
+          "Title": "Success",
+          "Message": "You successfully setup the device Wi-Fi credentials. Verify its LED is breathing cyan."
+        },
+        "SetupNewDevice": {
+          "Title": "Setup up a new device"
+        },
+        "LogOutConfirmation": {
+          "Title": "Log out",
+          "Message": "Are you sure you want to log out?"
+        }
+      },
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Your devices",
+          "Message": "See and manage your devices.\n\nOnline devices have their indicator 'breathing' cyan, offline ones are gray.\n\nTap a device to enter Device Inspector mode, device must run Tinker firmware to enter Tinker mode.\n\nSwipe left to remove a device from your account.\n\nPull down to refresh your list."
+        },
+        "Tutorial2": {
+          "Title": "Setup a new device",
+          "Message": "Tap the plus button to set up a new Photon or Electron device you wish to add to your account"
+        }
+      },
+      "Button": {
+        "Unclaim": "Unclaim"
+      }
+    },
+    "Filters": {
+      "Title": "Filters",
+      "Button": {
+        "ShowDevicesSingular": "Show {{count}} device",
+        "ShowDevicesPlural": "Show {{count}} devices"
+      },
+      "DeviceStatus": {
+        "Title": "Online Status",
+        "Online": "Online",
+        "Offline": "Offline"
+      },
+      "SortBy": {
+        "Title": "Sort By",
+        "OnlineStatus": "Online Status",
+        "DeviceType": "Device Type",
+        "Name": "Name",
+        "LastHeard": "Last Heard"
+      },
+      "DeviceType": {
+        "Title": "Device Type",
+        "Boron": "Boron / B SoM",
+        "Electron": "Electron / E SoM",
+        "Argon": "Argon",
+        "Photon": "Photon",
+        "Xenon": "Xenon",
+        "Other": "Other"
+      }
+    },
+    "ScanBarcode": {
+      "Error": {
+        "WrongStickerError": {
+          "Title": "Whoops!",
+          "Message": "Looks like you are scanning the wrong sticker. Please scan the ICCID barcode that came with your SIM card."
+        }
+      }
+    },
+    "DeviceInspector": {
+      "Tab": {
+        "Events": "Events",
+        "Functions": "Functions",
+        "Variables": "Variables",
+        "Tinker": "Tinker"
+      },
+      "Error": {
+        "FlashingDeviceError": {
+          "Title": "Flashing error",
+          "Message": "Error flashing device"
+        }
+      },
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Welcome to Device Inspector",
+          "Message": "See advanced information on your device."
+        },
+        "Tutorial2": {
+          "Title": "Modes",
+          "Message": "Device inspector has 4 views:\n\nEvents - view a real-time searchable list of published events.\n\nFunctions - interact with your device's functions.\n\nVariables - interact with your device's variables.\n\nTinker - control pin behavior for your device"
+        },
+        "Tutorial3": {
+          "Title": "Additional actions",
+          "Message": "Tap the Control Panel button to access advanced actions."
+        }
+      }
+    },
+    "InfoSlider": {
+      "DeviceStatus": {
+        "Online": "Online",
+        "Offline": "Offline",
+        "Flashing": "Flashing"
+      },
+      "SignalDevice": "Signal Device",
+      "Notes": "Notes",
+      "Name": "Name",
+      "NotesPlaceholder": "Use this space to keep notes on this device. Add or edit them.",
+      "Button": {
+        "Ping": "Ping"
+      },
+      "Prompt": {
+        "PingingDevice": {
+          "Title": "Pinging device",
+          "Message": "The Particle Cloud has sent a ping to this device. It will wait up to 15 seconds to hear back."
+        },
+        "PingingSuccessful": {
+          "Title": "Success",
+          "Message": "This device is online and connected!"
+        },
+        "ValueCopied": {
+          "Title": "Copied",
+          "Message": "{{label}} value was copied to the clipboard"
+        }
+      },
+      "Error": {
+        "PingingFailed": {
+          "Title": "Error",
+          "Message": "This device was unreachable by the Particle cloud within 15 seconds. The device may be powered off, or may be having trouble connecting to the Particle Cloud."
+        },
+        "RenamingDeviceFailed": {
+          "Title": "Error",
+          "Message": "Error renaming device: {{error}}"
+        },
+        "EditingNotesFailed": {
+          "Title": "Error",
+          "Message": "Error editing notes device: {{error}}"
+        }
+      },
+      "DeviceCell": {
+        "DeviceType": "Type",
+        "DeviceId": "ID",
+        "Serial": "Serial",
+        "LastICCID": "Last ICCID",
+        "IMEI": "IMEI",
+        "LastHeard": "Last Heard",
+        "LastIPAddress": "Last IP Address",
+        "DeviceOS": "Device OS",
+        "Unknown": "Unknown",
+        "Never": "Never"
+      }
+    },
+    "Events": {
+      "SearchPlaceholder": "Search events...",
+      "NoEvents": "No events",
+      "Prompt": {
+        "ClearAllEvents": {
+          "Title": "Clear all events",
+          "Message": "All events data will be deleted. Are you sure?"
+        },
+        "DataCopied": {
+          "Title": "Copied",
+          "Message": "Event data was copied to the clipboard"
+        },
+        "EventCopied": {
+          "Title": "Copied",
+          "Message": "Event payload was copied to the clipboard"
+        }
+      },
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Device Events",
+          "Message": "This is a searchable log of the events your device published to the cloud. Tap the blue clipboard button to copy event payload to your clipboard."
+        },
+        "Tutorial2": {
+          "Title": "Search events",
+          "Message": "Tap filter text field and type text to filter the events list and show only events containing the search text. Filtering is performed on event name and data."
+        },
+        "Tutorial3": {
+          "Title": "Play and pause",
+          "Message": "Tap play/pause button to pause the events stream momentarily. Events published while stream is paused will not be added to the list."
+        }
+      },
+      "Cell": {
+        "Event": "Event",
+        "Data": "Data",
+        "Time": "Time"
+      }
+    },
+    "Functions": {
+      "NoExposedFunctions": "No exposed functions",
+      "DeviceIsOffline": "Device is offline",
+      "CellErrorLabel": "Error",
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Device Functions",
+          "Message": "Tap the function cell to access the arguments box. Type in function arguments (comma separated if more than one) and tap send or the function name to call it."
+        }
+      },
+      "Error": {
+        "DeviceOffline": {
+          "Title": "Device offline",
+          "Message": "Device is offline. To execute functions device must be online."
+        }
+      }
+    },
+    "Variables": {
+      "NoExposedVariables": "No exposed variables",
+      "DeviceIsOffline": "Device is offline",
+      "CellErrorLabel": "Error",
+      "CellNotLoadedLabel": "...",
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Device Variables",
+          "Message": "Simply tap a variable name to read its current value. Tap any long variable value to show a popup with the full string value in case it has been truncated."
+        }
+      },
+      "Error": {
+        "DeviceOffline": {
+          "Title": "Device offline",
+          "Message": "Device is offline. To update variable values device must be online."
+        }
+      },
+      "Prompt": {
+        "CopyVariable": {
+          "Title": "Copy to clipboard"
+        },
+        "VariableCopied": {
+          "Title": "Copied",
+          "Message": "Variable value was copied to the clipboard"
+        }
+      }
+    },
+    "Tinker": {
+      "DeviceOffline": "Device is offline",
+      "FlashTinker": "To enable Tinker, you need to flash the Tinker firmware to this device.",
+      "Button": {
+        "FlashTinker": "FLASH TINKER"
+      },
+      "Function": {
+        "AnalogRead": "analogRead",
+        "AnalogWrite": "analogWrite",
+        "DigitalRead": "digitalRead",
+        "DigitalWrite": "digitalWrite"
+      },
+      "PinValue": {
+        "High": "HIGH",
+        "Low": "LOW"
+      },
+      "Prompt": {
+        "FlashTinker": {
+          "Title": "Flash Tinker?",
+          "Message": "Flashing will overwrite the application firmware on your Particle device with the Tinker app."
+        }
+      },
+      "Tutorial": {
+        "Tutorial1": {
+          "Title": "Welcome to Tinker!",
+          "Message": "Tinker is the fastest and easiest way to prototype and play with your Particle device. Access the basic input/output functions of the device pins without writing a line of code."
+        },
+        "Tutorial2": {
+          "Title": "Blink the onboard LED",
+          "Message": "Tap any pin to get started. Start with pin D7 - select 'digitalWrite' and tap the pin, see what happens on your device. You've just flashed an LED over the internet! Reset any pin function by long-pressing it."
+        }
+      },
+      "Error": {
+        "FlashingDeviceError": {
+          "Title": "Flashing error",
+          "Message": "Error flashing device: {{error}}"
+        },
+        "DeviceNotSupported": {
+          "Title": "Reflash Tinker",
+          "Message": "App does not support flashing tinker to this device."
+        },
+        "ReadingValueError": {
+          "Title": "Error",
+          "Message": "There was an error while reading value of {{pin}} pin."
+        },
+        "UpdatingValueError": {
+          "Title": "Error",
+          "Message": "There was an error while updating value of {{pin}} pin."
+        }
+      }
     }
   }
 }
+ 
