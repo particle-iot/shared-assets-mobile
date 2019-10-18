@@ -1,0 +1,497 @@
+{
+  "MeshStrings" : {
+    "GetCommissionerReady" : {
+      "Text2" : "Press and hold the MODE button for 3 seconds",
+      "Button" : "Assisting device blinking blue",
+      "Text1" : "Find a device that is already on the {{network}} mesh network",
+      "Text4" : "",
+      "Title" : "Add {{device}} to {{network}} mesh network",
+      "Text3" : "Confirm the device is blinking blue and your phone remains physically close to that device"
+    },
+    "ScanSticker" : {
+      "Title" : "Scan the sticker",
+      "Text" : "Make sure the sticker is steady and well-lit"
+    },
+    "GatewayInfoEthernetStandalone" : {
+      "Text2" : "To connect, your {{device}} will use an Ethernet connection",
+      "Button" : "Next",
+      "Text1" : "Standalone devices require a connection to the Device Cloud to securely talk to the Internet",
+      "Title" : "OK—Let’s get this device connected to the Device Cloud"
+    },
+    "UpdateFirmwareProgress" : {
+      "SuccessText" : "Device OS has been successfully updated.",
+      "NoteText" : "Please keep your phone awake with this app open during this Device OS update.",
+      "Text" : "Sending part {0} to device — {1}% done",
+      "TextInstalling" : "Installing part {0} on device",
+      "SuccessTitle" : "Congrats!",
+      "Title" : "Updating Device OS",
+      "NoteTitle" : "IMPORTANT!"
+    },
+    "JoinerInfo" : {
+      "Text2" : "To connect, you will send the {{device}} mesh network credentials",
+      "Button" : "Next",
+      "Text1" : "Mesh nodes require a connection to the Device Cloud via a local mesh network to securely talk to the Internet",
+      "Title" : "OK—Let’s get this mesh node connected to the Device Cloud",
+      "Text3" : "Once connected, this device can communicate with the Device Cloud via a mesh gateway, and locally with other devices in the mesh network"
+    },
+    "FindSticker" : {
+      "Title" : "Pair {{device}} with your phone",
+      "Button" : "Scan data matrix",
+      "Text" : "Find the data matrix sticker on the front of your device. Use your phone camera to scan the code."
+    },
+    "PricingInfo" : {
+      "PriceText" : "${{0}}",
+      "FreeDevicesText" : "First {{0}} devices FREE",
+      "DeviceCloudPlanTitle" : "DEVICE CLOUD",
+      "CellularDeviceText" : "Cellular device",
+      "FeaturesDataAllowence" : "{{0}}MB of cellular data/mo.\\naddnl. MBs start at ${{1}}",
+      "ButtonNext" : "Next",
+      "PaidNetworkTitle" : "To create a new mesh network, please enroll in a Device Cloud subscription",
+      "FeaturesStandardSupport" : "Standard support",
+      "MicroNetworkPlanTitle" : "MICRO NETWORK",
+      "PaidGatewayDeviceTitle" : "To activate this device, please enroll in a Device Cloud subscription",
+      "MeshNetworkFeatures" : "MESH NETWORK INCLUDES",
+      "WifiDeviceText" : "Wi-Fi/Ethernet device",
+      "WifiGatewayText" : "Wi-Fi/Ethernet Gateway",
+      "FreeNetworkTitle" : "Woo-hoo! Enjoy this new mesh network on us",
+      "FeaturesDeviceCloud" : "Device Cloud Features +",
+      "CellularGatewayText" : "Cellular Gateway",
+      "FreeNetworksText" : "First {{0}} networks FREE",
+      "FreeGatewayDeviceTitle" : "Woo-hoo! Enjoy Device Cloud access for this device on us",
+      "ButtonEnroll" : "Enroll in subscription",
+      "PriceNoteText" : "per mo.",
+      "FeaturesMaxDevices" : "{{0}} total devices",
+      "FeaturesMaxGateways" : "up to {{0}} gateway",
+      "FreeMonthsText" : "FREE for {{0}} months",
+      "DeviceCloudFeatures" : "DEVICE CLOUD INCLUDES"
+    },
+    "Pairing" : {
+      "SuccessTitle" : "Congrats!",
+      "SuccessText" : "You’ve successfully paired {{deviceName}}",
+      "PairingText" : "Pairing with your {{device}}"
+    },
+    "Prompt" : {
+      "ErrorTitle" : "Error",
+      "SwitchToControlPanelText" : "This device was already set up and belongs to your account. Would you like to switch to Control Panel or continue this guided setup?",
+      "LeaveNetworkTitle" : "Leave current network?",
+      "SwitchToControlPanelTitle" : "Switch to Control Panel",
+      "LeaveNetworkText" : "The device you are trying to set up is already part of a mesh network. Would you like to have the device leave its current mesh network to continue setup?",
+      "NoCameraText" : "Your device does not support scanning data matrices. Please use a device with a camera.",
+      "CancelSetupText" : "Are you sure you want to stop setting up your device?",
+      "NoCameraPermissionsText" : "It seems that you declined camera access for Particle app. Please grant camera access permissions in Settings app to continue.",
+      "CancelSetupTitle" : "End setup",
+      "ControlPanelExternalSimNotSupportedText" : "We have detected that you are using external SIM card. Cellular settings are only available for devices with active internal SIM card.",
+      "NoCameraTitle" : "Error",
+      "NoCameraPermissionsTitle" : "Error"
+    },
+    "ControlPanel" : {
+      "Root" : {
+        "Documentation" : "Documentation",
+        "UnclaimDevice" : "Unclaim Device",
+        "Ethernet" : "Ethernet",
+        "Mesh" : "Mesh",
+        "Cellular" : "Cellular",
+        "Name" : "Device Name",
+        "Title" : "Control Panel",
+        "Notes" : "Notes",
+        "Wifi" : "Wi-Fi"
+      },
+      "FlowComplete" : {
+        "ChangeDataLimit" : {
+          "Title" : "Success",
+          "Text" : "SIM data limit was changed"
+        },
+        "AddNewWifi" : {
+          "Title" : "Success",
+          "Text" : "Wi-Fi credentials were successfully added to {{deviceName}}"
+        },
+        "ToggleEthernet" : {
+          "Title" : "Success",
+          "ActivateText" : "Ethernet pins activated",
+          "DeactivateText" : "Ethernet pins deactivated"
+        },
+        "ToggleSim" : {
+          "Title" : "Success",
+          "ActivateText" : "SIM activated",
+          "DeactivateText" : "SIM deactivated"
+        },
+        "LeaveMeshNetwork" : {
+          "Title" : "Success",
+          "Text" : "{{deviceName}} was removed from mesh network"
+        }
+      },
+      "Mesh" : {
+        "DeviceRole" : "Role",
+        "NetworkInfo" : "Network Info",
+        "LeaveNetwork" : "Leave network",
+        "AddToNetwork" : "Add to network",
+        "NetworkPanID" : "PanID",
+        "DeviceCount" : "Device Count",
+        "DeviceRoleGateway" : "Gateway",
+        "NetworkName" : "Name",
+        "NetworkChannel" : "Channel",
+        "DeviceInfo" : "Device Info",
+        "NetworkExtPanID" : "ExtPanID",
+        "DeviceRoleNode" : "Node",
+        "DemoteFromGateway" : "Demote from gateway",
+        "NetworkID" : "ID",
+        "Title" : "Mesh",
+        "PromoteToGateway" : "Promote to gateway",
+        "NoNetworkInfo" : "No network"
+      },
+      "Cellular" : {
+        "Active" : "Active",
+        "SimPausedDescription" : "This Particle SIM card is paused. The device using this SIM cannot connect to the Internet via cellular until it is unpaused.",
+        "ResumeSim" : {
+          "TextTitle" : "Unpause SIM Card",
+          "Note" : "Unpausing may take up to a few minutes. Please be patient.",
+          "ContinueButton" : "Unpause SIM",
+          "Title" : "SIM Status",
+          "Text" : "Unpausing your SIM with ICCID ending in …{{iccid}} will immediately resume cellular data transfer. You do have the option of waiting until the start of your next billing period when Particle will automatically unpause your SIM.\\r\\n\\r\\nPlease adjust your data limit below. Note that the new data limit will carry over to future billing periods."
+        },
+        "ActivateSim" : {
+          "TextTitle" : "Reactivate SIM Card",
+          "Note" : "Reactivation may take up to a few minutes. Please be patient.",
+          "ContinueButton" : "Reactivate SIM",
+          "Title" : "SIM Status",
+          "Text" : "We’re so glad you’d like to reactivate your Particle SIM with an ICCID ending in ...{{iccid}}. This will resume cellular data transfer and immediately allow devices using this SIM to connect to the Internet.\\r\\n\\r\\nReactivation of the SIM also resumes monthly Device Cloud subscription."
+        },
+        "SimNeverActivatedDescription" : "This Particle SIM has not been activated yet. To connect this device to the Internet via cellular, please run standard setup (via the \\\"+\\\" button on the device list screen), which will activate the SIM card.",
+        "NeverActivated" : "Inactive",
+        "SimActiveDescription" : "This Particle SIM card is active. The device using this SIM should be able to connect to the Internet via cellular.",
+        "CellularDataTitle" : "Cellular Data",
+        "DataLimit" : {
+          "DataLimitValue" : "{{0}}MB",
+          "Note" : "Cellular data usage can take up to 24 hours to be reported. Overage costs in that timeframe may apply.",
+          "ContinueButton" : "Set Data Limit",
+          "Title" : "Monthly Data Limit",
+          "Text" : "Service will be paused once your SIM has reached the data limit below:",
+          "DataLimitValueNone" : "None"
+        },
+        "Inactive" : "Deactivated",
+        "Title" : "Cellular",
+        "SimDeactivatedDescription" : "This Particle SIM card is deactivated. The device using this SIM cannot connect to the Internet via cellular until it is reactivated.",
+        "Paused" : "Paused",
+        "ChangeSimStatus" : "SIM Status",
+        "DeactivateSim" : {
+          "TextTitle" : "Deactivate SIM Card",
+          "Note" : "Deactivation may take up to a few minutes. Please be patient.",
+          "ContinueButton" : "Deactivate SIM",
+          "Title" : "SIM Status",
+          "Text" : "Are you sure that you want to deactivate data service of the SIM with an ICCID ending in ...{{iccid}}?\\r\\n\\r\\nThis will immediately stop {{device}} using this SIM from sending or receiving data via a cellular network, and will disrupt expected device behavior until an active SIM is used."
+        },
+        "ChangeDataLimit" : "Monthly Data Limit"
+      },
+      "Action" : {
+        "DontLeaveNetwork" : "Cancel",
+        "Cancel" : "Cancel",
+        "LeaveNetwork" : "Leave Network",
+        "DeleteWifi" : "Remove",
+        "DontDeleteWifi" : "Cancel"
+      },
+      "PrepareForPairing" : {
+        "Signal" : "Signal",
+        "SignalWarning" : "Singal only works for devices breathing cyan",
+        "Title" : "Prepare For Pairing",
+        "Text" : "To proceed app needs to pair to your device. Please put {{deviceName}} into listening mode."
+      },
+      "Unclaim" : {
+        "TextTitle" : "Unclaim Device",
+        "UnclaimButton" : "Yes, Unclaim Device",
+        "Title" : "Unclaim Device",
+        "Text" : "Are you sure you would like to unclaim the device {{deviceName}}?\\r\\n\\r\\nThe current owner will lose the ability to view or interact with the device via the Particle Cloud. The device will be returned to an unclaimed State."
+      },
+      "ManageWifi" : {
+        "Title" : "Manage Wi-Fi",
+        "Text" : "Select stored WiFi credentials you want to remove"
+      },
+      "Ethernet" : {
+        "Footer" : "To enable Ethernet connectivity using the Particle Ethernet Featherwing, the SPI interface (SCK, MOSI, MISO) is used. Activating the Ethernet interface uses pins D3, D4, and D5 for control signals, and you will not be able to use those pins in your project.",
+        "ChangePinsStatus" : "Ethernet Pins",
+        "Title" : "Ethernet",
+        "Inactive" : "Inactive",
+        "Active" : "Active"
+      },
+      "Documentation" : {
+        "Title" : "Documentation"
+      },
+      "Wifi" : {
+        "RSSI" : "RSSI",
+        "AddNewWifi" : "Connect to new Wi-Fi",
+        "NetworkInfo" : "Network Info",
+        "BSSID" : "BSSID",
+        "NoNetworkInfo" : "No network",
+        "SSID" : "SSID",
+        "Channel" : "Channel",
+        "ManageWifi" : "Manage Wi-Fi",
+        "Title" : "Wi-Fi"
+      },
+      "Prompt" : {
+        "DeleteWifiTitle" : "Remove WiFi credentials?",
+        "LeaveNetworkTitle" : "Leave current network?",
+        "LeaveNetworkText" : "Are you sure you want to remove this device from current mesh network?",
+        "DeleteWifiText" : "Are you sure you want to remove WiFi credentials for '{{0}}'"
+      }
+    },
+    "PairingCommissioner" : {
+      "SuccessTitle" : "Congrats!",
+      "SuccessText" : "You’ve successfully paired {{deviceName}}",
+      "PairingText" : "Pairing with your {{device}}"
+    },
+    "ConnectingToInternetEthernet" : {
+      "Text2" : "Starting a secure session with the Particle Device Cloud",
+      "SuccessText" : "Your {{device}} has successfully connected to the Particle Device Cloud",
+      "Text1" : "Connecting to the internet via Ethernet",
+      "SuccessTitle" : "Congrats!",
+      "Title" : "Your {{device}} is connecting to the Particle Device Cloud"
+    },
+    "JoiningNetwork" : {
+      "Text2" : "Adding {{device}} to the mesh network",
+      "SuccessText" : "Your {{device}} has been successfully added to {{network}} mesh network",
+      "Text1" : "Requesting permission from assisting device to add {{device}}",
+      "SuccessTitle" : "Congrats!",
+      "Title" : "Your {{device}} is joining the {{network}} mesh network",
+      "Text3" : "Starting a secure session with the Particle Device Cloud via gateway"
+    },
+    "FindCommissionerSticker" : {
+      "NoteText" : "This device will act as the assisting device to allow your {{device}} to join the {{network}} mesh network",
+      "Button" : "Scan assisting device",
+      "Title" : "Pair assisting device with your phone",
+      "NoteTitle" : "HELPFUL TIP!",
+      "Text" : "Find the data matrix sticker on the front of the assisting device. Use your phone camera to scan the code."
+    },
+    "UpdateFirmware" : {
+      "NoteText" : "Your device may receive multiple files as part of this Device OS update. It will reboot in-between each file it receives from Device Cloud.",
+      "Button" : "Begin update",
+      "Title" : "Let’s get your device updated",
+      "NoteTitle" : "HELPFUL TIP!",
+      "Text" : "Update your device to the latest-and-greatest version of Device OS to continue setup"
+    },
+    "CreateOrSelectNetwork" : {
+      "Title" : "Create new network or select mesh network to join",
+      "CreateNetwork" : "Create new network"
+    },
+    "NetworkCreated" : {
+      "SuccessText" : "Your network has been created with {{deviceName}} acting as a gateway ",
+      "SuccessTitle" : "Congrats!",
+      "DoneLabel" : "Itching to get started?",
+      "DoneButton" : "I’m done",
+      "ContinueSetupLabel" : "Adding more devices to your network?",
+      "ContinueSetupButton" : "Set up next device"
+    },
+    "ConnectingToInternetCellular" : {
+      "Text2" : "Connecting to the internet via cellular",
+      "SuccessText" : "Your {{device}} has successfully connected to the Particle Device Cloud",
+      "Text1" : "Activating Particle SIM",
+      "SuccessTitle" : "Congrats!",
+      "Title" : "Your {{device}} is connecting to the Particle Device Cloud",
+      "Text3" : "Starting a secure session with the Particle Device Cloud"
+    },
+    "CreateNetworkName" : {
+      "NoteText" : "Name your network something you will remember to help you easily identify it later.",
+      "Button" : "Next",
+      "Title" : "Give your network a name",
+      "InputTitle" : "Network name",
+      "NoteTitle" : "HELPFUL TIP!"
+    },
+    "StandAloneOrMeshSetup" : {
+      "MeshButton" : "USE IN MESH NETWORK",
+      "Title" : "Do you want to use this {{device}} in a mesh network?",
+      "Text" : "This {{device}} can act as a gateway to the Internet and create a local wireless mesh network that other devices can join",
+      "StandAloneButton" : "DON'T USE IN MESH NETWORK"
+    },
+    "CreatingNetwork" : {
+      "Text2" : "{{deviceName}} creating the mesh network locally",
+      "SuccessText" : "Your network has been created!",
+      "Text1" : "Registering the mesh network with the Particle Device Cloud",
+      "SuccessTitle" : "Congrats!",
+      "Title" : "Creating network"
+    },
+    "GatewayInfoCellularStandalone" : {
+      "Text2" : "To connect the device will use the Particle SIM inside your {{device}} which has already been activated",
+      "Button" : "Connect to Device Cloud",
+      "Text1" : "Standalone devices require a connection to the Device Cloud to securely talk to the Internet",
+      "Text2Activate" : "To connect we’ll activate the Particle SIM inside your {{device}}",
+      "Title" : "OK—Let’s get this device connected to the Device Cloud",
+      "ButtonActivate" : "Activate SIM & Connect"
+    },
+    "SelectNetwork" : {
+      "Title" : "Select mesh network to join",
+      "DevicesPlural" : "{{0}} devices on network",
+      "DevicesSingular" : "1 device on network"
+    },
+    "GatewayInfoCellularMesh" : {
+      "Button" : "Connect to Device Cloud",
+      "Text1" : "Gateways require a connection to the Device Cloud to allow communication between the local mesh network and the Internet",
+      "Text3" : "Once connected you can create or join a mesh network using this {{device}}",
+      "Text2Activate" : "To connect we’ll activate the Particle SIM inside your {{device}}",
+      "Title" : "OK—Let’s get this mesh gateway connected to the Device Cloud",
+      "ButtonActivate" : "Activate SIM & Connect",
+      "Text2" : "To connect the device will use the Particle SIM inside your {{device}} which has already been activated "
+    },
+    "GetReady" : {
+      "SOMEthernetToggleText" : "Toggle ethernet setup",
+      "SOMTitle" : "Get your {{device}} ready for setup",
+      "Button" : "Next",
+      "SOMWifiCheckboxText" : "I have attached the Wi-Fi and bluetooth antennas and see that the device is blinking blue",
+      "SOMCellularCheckboxText" : "I have attached the cellular and bluetooth antennas and see that the device is blinking blue",
+      "CellularCheckboxText" : "I have attached the cellular antenna and see that the device is blinking blue",
+      "EthernetToggleText" : "Toggle ethernet featherwing setup",
+      "EthernetTitle" : "Attach your Ethernet Featherwing",
+      "SOMBluetoothCheckboxText" : "I have attached the bluetooth antenna and see that the device is blinking blue",
+      "Title" : "Get your {{device}} ready for setup",
+      "EthernetToggleTitle" : "USE WITH ETHERNET?",
+      "WifiCheckboxText" : "I have attached the Wi-Fi antenna and see that the device is blinking blue",
+      "SOMEthernetTitle" : "Get your {{device}} ready for setup",
+      "SOMEthernetToggleTitle" : "USE WITH ETHERNET?"
+    },
+    "Error" : {
+      "StickerError" : "There is a problem with the sticker on your device. Please contact support for a solution.",
+      "UnableToDownloadFirmwareBinary" : "Failed to download the firmware update. Please try again later.",
+      "CommissionerNetworkDoesNotMatch" : "This device is on a different mesh network than the one you are trying to join. Please find the device that belongs to selected mesh network and try again.",
+      "DeviceTimeoutWhileJoiningNetwork" : "Your device was unable to join the network (TIMEOUT). Please press try again.",
+      "FailedToActivateSim" : "SIM activation is taking longer than expected. Please retry your SIM activation. If you have retried multiple times, please contact support.",
+      "BluetoothTimeout" : "Sending Bluetooth messages failed. Please try again.",
+      "WrongCommissionerDeviceType" : "This is not valid device sticker. Please scan 3rd generation device sticker.",
+      "UnableToGenerateClaimCode" : "There was an error attempting to claim this device to your account.",
+      "InvalidDeviceState" : "Device is in invalid state, please reset the device and start again.",
+      "NetworkError" : "There was a network error communicating to Particle Device Cloud.",
+      "UnableToJoinNetwork" : "There was an error while adding your device to mesh network on Particle Device Cloud.",
+      "FailedToUpdateDeviceOS" : "There was an error while performing a Device OS update.",
+      "FailedToStartScan" : "Bluetooth appears to be disabled on your phone. Please enable Bluetooth and try again.",
+      "FailedToScanBecauseOfTimeout" : "Unable to find your mesh device. Make sure the mesh device's LED is blinking blue and that it's not connected to any other devices.",
+      "FailedToObtainIp" : "Your device failed to obtain an IP address. Please make sure your device has internet access.",
+      "SameDeviceScannedTwice" : "This is the device that is being setup. Please scan the sticker of device that is on the mesh network you are trying to join.",
+      "FailedToDeactivateSim" : "SIM deactivation is taking longer than expected. Please retry your SIM deactivation. If you have retried multiple times, please contact support.",
+      "CriticalFlowError" : "There was a problem with the setup. Please contact support with the latest device log to help us fix it as soon as possible.",
+      "SimBelongsToOtherAccount" : "The SIM you are trying to interact with is owned by a different user account.",
+      "CannotAddGatewayDeviceAsJoiner" : "Support for adding multiple gateways to a single network is coming soon. Argons, Borons, and Xenons with Ethernet FeatherWings, must be set up as a standalone device or as the first gateway in a new mesh network.",
+      "NameTooShort" : "Your device name cannot be empty.",
+      "FailedToConnect" : "You phone failed to connect to your mesh device. Please try again.",
+      "ThisDeviceIsACommissioner" : "This device now acts as commissioner. Please restart the setup if you want to set it up again.",
+      "UnableToCreateNetwork" : "There was an error while registering your new network with Particle Device Cloud.",
+      "BoronModemError" : "There was an error in accessing the modem on the device. The modem is now being rebooted in an attempt to recover. Wait a few seconds and then try again. If the error persists, try resetting the device manually by tapping the RESET button, and restart the setup process.",
+      "FailedToFlashBecauseOfTimeout" : "It seems that your device has exited listening mode. Please put your device in listening mode (blinking blue) and retry.",
+      "DeviceIsNotAllowedToJoinNetwork" : "Your device was unable to join the network (NOT_ALLOWED). Please press try again.",
+      "DeviceTooFar" : "Your mesh device is too far away from your phone. Please hold your phone closer and try again.",
+      "FailedToGetDeviceInfo" : "Unable to get information about the device from Device Cloud.",
+      "FailedToHandshakeBecauseOfTimeout" : "Unable to establish a secure connection with your device. Usually, this happens because the Bluetooth modem on your mobile phone has become unresponsive. Please restart the Bluetooth radio in settings, or restart your phone to try again. If this problem persists once you’ve done so, please contact support.",
+      "BluetoothError" : "Something went wrong with Bluetooth. Please restart the set up process and try again.",
+      "BluetoothConnectionDropped" : "The Bluetooth connection was dropped unexpectedly. Please restart the set up and try again.",
+      "WifiPasswordTooShort" : "The password you entered is too short.",
+      "WrongTargetDeviceType" : "This is not valid device sticker. Please scan 3rd generation device sticker.",
+      "DeviceConnectToCloudTimeout" : "Your device could not connect to Device Cloud. Please try again.",
+      "DeviceGettingClaimedTimeout" : "Your device failed to be claimed. Please try again.",
+      "UnableToPublishDeviceSetupEvent" : "There was an error while notifying the Particle Device Cloud about successful device setup. Please try again.",
+      "WrongNetworkPassword" : "The password you entered is incorrect.",
+      "UnableToRenameDevice" : "Unable to rename your device at this time. Please try again later.",
+      "UnableToGetPricingInformation" : "There was an error while retrieving pricing information. Please try again.",
+      "UnableToGetSimStatus" : "There was an error while reading internal SIM card status. Please try again.",
+      "ExternalSimNotSupported" : "We have detected that you are using external SIM card. Use the internal SIM to complete setup. You may use an external SIM after setup is complete.",
+      "PasswordTooShort" : "Your network password must be between 6 and 16 characters.",
+      "UnableToJoinOldNetwork" : "The network you are trying to join was created locally with test version of the app. Please create new network.",
+      "UnableToRetrieveNetworks" : "There was an error while accessing your mesh network information on Particle Device Cloud.",
+      "FailedToObtainIpBoron" : "Your device is taking longer than expected to connect to the Internet. If you are setting up a Boron 2/3G, it may take up to 5 minutes to establish a connection with the cellular tower in your area.",
+      "BluetoothDisabled" : "Bluetooth appears to be disabled on your phone. Please enable Bluetooth and try again.",
+      "UnableToLeaveNetwork" : "There was an error while removing your device from the mesh network on Particle Device Cloud.",
+      "NameInUse" : "You already own a network with this name. Please use different name.",
+      "CCMissing" : "You need to add a credit card to your account to continue. Please visit https://console.particle.io/billing/edit-card to add a card and return here when you're done.",
+      "IllegalOperation" : "Illegal operation.",
+      "FailedToChangeSimDataLimit" : "There was an error changing data limit for SIM card. If you have retried multiple times, please contact support.",
+      "DeviceIsUnableToFindNetworkToJoin" : "Your device was unable to join the network (NOT_FOUND). Please press try again."
+    },
+    "Default" : {
+      "DeviceType" : "device"
+    },
+    "ScanCommissionerSticker" : {
+      "Title" : "Pair assisting device with your phone",
+      "Text" : "Point the camera at the data matrix on the device."
+    },
+    "Action" : {
+      "Retry" : "Retry",
+      "LeaveNetwork" : "Leave Network",
+      "ContactSupport" : "Contact Support",
+      "CancelSetup" : "Yes",
+      "SwitchToControlPanel" : "Switch to Control Panel",
+      "Continue" : "Continue",
+      "DontSwitchToControlPanel" : "Continue Setup",
+      "OpenSettings" : "Open Settings",
+      "DontLeaveNetwork" : "Cancel Setup",
+      "ContinueSetup" : "No",
+      "Ok" : "Ok",
+      "Cancel" : "Cancel"
+    },
+    "GatewayInfoWifiStandalone" : {
+      "Text2" : "To connect you will send the {{device}} Wi-Fi network credentials",
+      "Button" : "Next",
+      "Text1" : "Standalone devices require a connection to the Device Cloud to securely talk to the Internet",
+      "Title" : "OK—Let’s get this device connected to the Device Cloud"
+    },
+    "Success" : {
+      "SetupAnotherLabel" : "Adding more devices to this network?",
+      "SuccessText" : "{{deviceName}} is all set up!",
+      "SuccessTitle" : "Congrats!",
+      "DoneLabel" : "Itching to get started?",
+      "DoneButton" : "Done",
+      "SetupAnotherButton" : "Set up another device"
+    },
+    "DeviceName" : {
+      "NoteText" : "Name your device something you will remember to help you easily identify it later.",
+      "Button" : "Next",
+      "Title" : "Give your {{device}} a name",
+      "InputTitle" : "Device name",
+      "NoteTitle" : "HELPFUL TIP!"
+    },
+    "WifiNetworkPassword" : {
+      "Title" : "Enter password for {{network}}",
+      "InputTitle" : "Password",
+      "Button" : "Connect to Device Cloud"
+    },
+    "GatewayInfoEthernetMesh" : {
+      "Text2" : "To connect, your {{device}} will use an Ethernet connection",
+      "Button" : "Next",
+      "Text1" : "Gateways require a connection to the Device Cloud to allow communication between the local mesh network and the Internet",
+      "Title" : "OK—Let’s get this mesh gateway connected to the Device Cloud",
+      "Text3" : "Once connected you can create or join a mesh network using this {{device}}"
+    },
+    "GatewayInfoWifiMesh" : {
+      "Text2" : "To connect you will send the {{device}} Wi-Fi network credentials",
+      "Button" : "Next",
+      "Text1" : "Gateways require a connection to the Device Cloud to allow communication between the local mesh network and the Internet",
+      "Title" : "OK—Let’s get this mesh gateway connected to the Device Cloud",
+      "Text3" : "Once connected you can create or join a mesh network using this {{device}}"
+    },
+    "ExistingNetworkPassword" : {
+      "NoteText" : "This is the password that was set when the mesh network was first created. This password is required to authenticate new devices added to this network.",
+      "Button" : "Join Network",
+      "Title" : "Enter network password for {{network}}",
+      "InputTitle" : "Network password",
+      "NoteTitle" : "HELPFUL TIP!"
+    },
+    "SelectDevice" : {
+      "MeshAndCellular" : "Mesh + Cellular",
+      "MeshOnly" : "Mesh only",
+      "Title" : "Choose the device you’re setting up",
+      "MeshAndWifi" : "Mesh + Wi-Fi"
+    },
+    "SelectWifiNetwork" : {
+      "Title" : "Your Argon is scanning for Wi-Fi networks to join"
+    },
+    "CreateNetworkPassword" : {
+      "Button" : "Create network",
+      "PasswordsDoNotMatch" : "Password and repeated password do not match.",
+      "RepeatTitle" : "Confirm network password",
+      "NoteText" : "You’ll need this password each time you want to add a new device to this mesh network.",
+      "Title" : "Set network admin password",
+      "InputTitle" : "Network password",
+      "NoteTitle" : "KEEP THIS PASSWORD SAFE!"
+    },
+    "ConnectingToInternetWifi" : {
+      "Text2" : "Starting a secure session with the Particle Device Cloud",
+      "SuccessText" : "Your {{device}} has successfully connected to the Particle Device Cloud",
+      "Text1" : "Connecting to the internet via Wi-Fi",
+      "SuccessTitle" : "Congrats!",
+      "Title" : "Your {{device}} is connecting to the Particle Device Cloud"
+    }
+  }
+}
