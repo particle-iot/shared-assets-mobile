@@ -25,7 +25,7 @@ def outputStrings(json, key, output):
             outputStrings(json[n], key, output)
             key.pop()
         else:
-            output.write(u'\"%s.%s\" = \"%s<>\";\n' % ('.'.join(key), n, json[n]))
+            output.write(u'\"%s.%s\" = \"%s\";\n' % ('.'.join(key), n, json[n]))
     output.write(u'\n')
 
 
