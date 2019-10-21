@@ -21,8 +21,8 @@
     "UpdateFirmwareProgress" : {
       "SuccessText" : "Device OS has been successfully updated.",
       "NoteText" : "Please keep your phone awake with this app open during this Device OS update.",
-      "Text" : "Sending part {0} to device — {1}% done",
-      "TextInstalling" : "Installing part {0} on device",
+      "Text" : "Sending part {{partIdx}} to device — {{progress}}% done",
+      "TextInstalling" : "Installing part {{partIdx}} on device",
       "SuccessTitle" : "Congrats!",
       "Title" : "Updating Device OS",
       "NoteTitle" : "IMPORTANT!"
@@ -40,11 +40,11 @@
       "Text" : "Find the data matrix sticker on the front of your device. Use your phone camera to scan the code."
     },
     "PricingInfo" : {
-      "PriceText" : "${{0}}",
-      "FreeDevicesText" : "First {{0}} devices FREE",
+      "PriceText" : "${{price}}",
+      "FreeDevicesText" : "First {{freeDeviceCount}} devices FREE",
       "DeviceCloudPlanTitle" : "DEVICE CLOUD",
       "CellularDeviceText" : "Cellular device",
-      "FeaturesDataAllowence" : "{{0}}MB of cellular data/mo.\\naddnl. MBs start at ${{1}}",
+      "FeaturesDataAllowence" : "{{dataAllowance}}MB of cellular data/mo.\\naddnl. MBs start at ${{pricePerMB}}",
       "ButtonNext" : "Next",
       "PaidNetworkTitle" : "To create a new mesh network, please enroll in a Device Cloud subscription",
       "FeaturesStandardSupport" : "Standard support",
@@ -56,13 +56,13 @@
       "FreeNetworkTitle" : "Woo-hoo! Enjoy this new mesh network on us",
       "FeaturesDeviceCloud" : "Device Cloud Features +",
       "CellularGatewayText" : "Cellular Gateway",
-      "FreeNetworksText" : "First {{0}} networks FREE",
+      "FreeNetworksText" : "First {{freeNetworksCount}} networks FREE",
       "FreeGatewayDeviceTitle" : "Woo-hoo! Enjoy Device Cloud access for this device on us",
       "ButtonEnroll" : "Enroll in subscription",
       "PriceNoteText" : "per mo.",
-      "FeaturesMaxDevices" : "{{0}} total devices",
-      "FeaturesMaxGateways" : "up to {{0}} gateway",
-      "FreeMonthsText" : "FREE for {{0}} months",
+      "FeaturesMaxDevices" : "{{maxDevices}} total devices",
+      "FeaturesMaxGateways" : "up to {{maxGateways}} gateway",
+      "FreeMonthsText" : "FREE for {{freeMonths}} months",
       "DeviceCloudFeatures" : "DEVICE CLOUD INCLUDES"
     },
     "Pairing" : {
@@ -161,7 +161,7 @@
         "SimActiveDescription" : "This Particle SIM card is active. The device using this SIM should be able to connect to the Internet via cellular.",
         "CellularDataTitle" : "Cellular Data",
         "DataLimit" : {
-          "DataLimitValue" : "{{0}}MB",
+          "DataLimitValue" : "{{dataLimit}}MB",
           "Note" : "Cellular data usage can take up to 24 hours to be reported. Overage costs in that timeframe may apply.",
           "ContinueButton" : "Set Data Limit",
           "Title" : "Monthly Data Limit",
@@ -230,7 +230,7 @@
         "DeleteWifiTitle" : "Remove WiFi credentials?",
         "LeaveNetworkTitle" : "Leave current network?",
         "LeaveNetworkText" : "Are you sure you want to remove this device from current mesh network?",
-        "DeleteWifiText" : "Are you sure you want to remove WiFi credentials for '{{0}}'"
+        "DeleteWifiText" : "Are you sure you want to remove WiFi credentials for '{{wifiSSID}}'"
       }
     },
     "PairingCommissioner" : {
@@ -317,7 +317,7 @@
     },
     "SelectNetwork" : {
       "Title" : "Select mesh network to join",
-      "DevicesPlural" : "{{0}} devices on network",
+      "DevicesPlural" : "{{count}} devices on network",
       "DevicesSingular" : "1 device on network"
     },
     "GatewayInfoCellularMesh" : {
