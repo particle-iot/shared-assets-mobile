@@ -11,12 +11,17 @@ from datetime import date
 jsonPath = 'TinkerStrings.json'
 stringsPath = 'TinkerStrings.strings'
 swiftPath = 'TinkerStrings.swift'
+methodName = 'tinkerLocalized()'
+useObjC = False
 
 if (len(sys.argv) > 1):
     jsonPath = sys.argv[1]
     stringsPath = sys.argv[2]
     swiftPath = sys.argv[3]
     methodName = sys.argv[4]
+
+if (len(sys.argv) > 5):
+    useObjC = sys.argv[5] == 'objc'
 
 def outputStrings(json, key, output):
     for n in json:
@@ -41,6 +46,17 @@ def outputSwift(json, key, output):
         else:
             output.write(u'%sstatic let %s = "%s.%s".%s\n' % ('\t' * len(key), n, '.'.join(key), n, methodName))
 
+def outputObjC(json, key, output):
+    for n in json:
+        if isinstance(json[n], dict):
+            key.append(n)
+            outputObjC(json[n], key, output)
+            key.pop()
+        else:
+            output.write(u'#define %s_%s = NSLocalizedStringFromTable(@\"%s.%s\", @\"ParticleSetupStrings\", @\"\")' % ('_'.join(key), n, '.'.join(key), n))
+    output.write(u'\n')
+
+
 #open data as
 data = json.load(io.open(jsonPath, 'r', encoding='utf8'))
 key = []
@@ -54,7 +70,10 @@ output.close()
 #prepare for the output
 output = io.open(swiftPath, 'w', encoding='utf8')
 output.write(u'// Generated on %s by iOS.py\n\n' % date.today())
-outputSwift(data, key, output)
+if (useObjC == False):
+    outputSwift(data, key, output)
+else:
+    outputObjC(data, key, output)
 output.close()
 
 
