@@ -481,7 +481,7 @@
       "Button" : "Create network",
       "PasswordsDoNotMatch" : "Password and repeated password do not match.",
       "RepeatTitle" : "Confirm network password",
-      "NoteText" : "You’ll need this password each time you want to add a new device to this mesh network.",
+      "NoteText" : "This password is never sent to the Particle Cloud, therefore it is impossible to recover it if forgotten or lost. You’ll need this password each time you want to add a new device to this mesh network.",
       "Title" : "Set network admin password",
       "InputTitle" : "Network password",
       "NoteTitle" : "KEEP THIS PASSWORD SAFE!"
