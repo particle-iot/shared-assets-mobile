@@ -20,7 +20,7 @@
     },
     "UpdateFirmwareProgress" : {
       "SuccessText" : "Device OS has been successfully updated.",
-      "NoteText" : "Please keep your phone awake with this app open during this Device OS update.",
+      "NoteText" : "Please keep your phone awake with this app open during this Device OS update.\\n\\nHaving difficulties? Consider updating your device through the Particle CLI from your computer.",
       "Text" : "Sending part {{partIdx}} to device — {{progress}}% done",
       "TextInstalling" : "Installing part {{partIdx}} on device",
       "SuccessTitle" : "Congrats!",
