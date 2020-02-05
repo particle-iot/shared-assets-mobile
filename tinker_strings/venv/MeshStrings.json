@@ -81,6 +81,7 @@
       "NoCameraPermissionsText" : "It seems that you declined camera access for Particle app. Please grant camera access permissions in Settings app to continue.",
       "CancelSetupTitle" : "End setup",
       "ControlPanelExternalSimNotSupportedText" : "We have detected that you are using external SIM card. Cellular settings are only available for devices with active internal SIM card.",
+      "ControlPanelMeshNotSupportedText" : "This device is running Device OS version that does not support mesh (v2.0 or newer). If you want to access to mesh settings, please downgrade to Device OS v1.*.",
       "NoCameraTitle" : "Error",
       "NoCameraPermissionsTitle" : "Error"
     },
@@ -398,7 +399,9 @@
       "CCMissing" : "You need to add a credit card to your account to continue. Please visit https://console.particle.io/billing/edit-card to add a card and return here when you're done.",
       "IllegalOperation" : "Illegal operation.",
       "FailedToChangeSimDataLimit" : "There was an error changing data limit for SIM card. If you have retried multiple times, please contact support.",
-      "DeviceIsUnableToFindNetworkToJoin" : "Your device was unable to join the network (NOT_FOUND). Please press try again."
+      "DeviceIsUnableToFindNetworkToJoin" : "Your device was unable to join the network (NOT_FOUND). Please press try again.",
+      "MeshNotSupported" : "Your device is running Device OS version that does not support mesh (v2.0 or newer). If you want to set up mesh, please downgrade to Device OS v1.*.",
+      "CommissionerMeshNotSupported" : "This device does not support mesh (it runs Device OS v2.0 or newer). Please find the device that belongs to selected mesh network and try again."
     },
     "Default" : {
       "DeviceType" : "device"
