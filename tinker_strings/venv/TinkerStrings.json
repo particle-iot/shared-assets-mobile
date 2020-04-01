@@ -87,7 +87,7 @@
         },
         "SetupSuccessful": {
           "Title": "Success",
-          "Message": "Nice, you've successfully set up your first Particle! You'll be receiving a welcome email with helpful tips and links to resources. Start developing by going to https://build.particle.io/ on your computer, or stay here and enjoy the magic of Tinker."
+          "Message": "You successfully added a new device to your account."
         },
         "SetupSuccessfulWifiOnly": {
           "Title": "Success",
