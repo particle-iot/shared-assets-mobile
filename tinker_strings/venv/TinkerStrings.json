@@ -99,6 +99,10 @@
         "LogOutConfirmation": {
           "Title": "Log out",
           "Message": "Are you sure you want to log out?"
+        },
+        "DeviceLimitReachedError": {
+          "Title": "You've reached the {{limit}} device limit!",
+          "Message": "Please upgrade your Particle account at console.particle.io from a computer."
         }
       },
       "Tutorial": {
