@@ -19,7 +19,7 @@
       "LogOut": "Log out",
       "LogIn": "Log in",
       "ShareApplicationLogs": "Share application logs",
-      "Setup3rdGen": "Argon / Boron / Xenon",
+      "Setup3rdGen": "Argon / Boron",
       "SetupPhoton": "Photon",
       "SetupElectron": "Electron / SIM"
     },
@@ -69,7 +69,7 @@
         },
         "AuthRequiredToSetup3rdGen": {
           "Title": "Authentication",
-          "Message": "You must be logged to your Particle account in to setup an Argon / Boron / Xenon"
+          "Message": "You must be logged to your Particle account in to setup an Argon / Boron"
         },
         "AuthRequiredToSetupElectron": {
           "Title": "Authentication",
