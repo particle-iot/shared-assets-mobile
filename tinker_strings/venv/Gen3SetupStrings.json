@@ -321,7 +321,7 @@
       "SOMEthernetToggleTitle" : "USE WITH ETHERNET?"
     },
     "Error" : {
-      "XennonNotSupportedError" : "Xenon device setup is not supported. Please scan supported 3rd generation device sticker.",
+      "XennonNotSupportedError" : "Xenon device setup is not supported for new, unclaimed Xenon devices. Please scan a supported 3rd generation device sticker.",
       "StickerError" : "There is a problem with the sticker on your device. Please contact support for a solution.",
       "UnableToDownloadFirmwareBinary" : "Failed to download the firmware update. Please try again later.",
       "CommissionerNetworkDoesNotMatch" : "This device is on a different mesh network than the one you are trying to join. Please find the device that belongs to selected mesh network and try again.",
